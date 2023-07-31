@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    background: url('assets/bg-main-desktop.png') no-repeat;
+    background-position: center;
+}
+
+
+/* --nav- */
+nav {
+    position: relative;
+}
+
+.logo {
+    margin: 4rem 8%;
+}
+
+
+nav .decoration {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* --header-- */
+
+.header .title {
+    font-size: 7rem;
+    margin: 4rem 8% 1rem;
+    line-height: 1;
+    width: 40%;
+}
+
+.header p {
+    font-size: 1.6rem;
+    width: 40%;
+    line-height: 1.5;
+    margin: 2rem 8% 8rem;
+}
+
+/* ----picture combo--- */
+
+.picture-combo {
+    margin: 50rem 8% 8rem;
+    background: black;
+    z-index: -1000;
+    height: 70rem;
+    position: relative;
+    display: flex;
+}
+
+.picture-combo .imgs {
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.picture-combo .imgs .phone {
+    width: 35rem;
+    position: absolute;
+    margin-top: -30rem;
+    margin-left: 10rem;
+}
+
+.picture-combo .imgs .illus {
+    position: absolute;
+    margin-left: 420px;
+    z-index: -1;
+}
+
+.picture-combo .premium-card {
+    padding: 6rem 1rem 1rem;
+    background: #FA7453;
+    width: 85rem;
+    height: 60rem;
+    position: absolute;
+    right: 5%;
+    margin-top: 15rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+.picture-combo .premium-card .text {
+    width: 50%;
+}
+
+.picture-combo .premium-card .p-talk {
+    font-size: 4rem;
+    width: 50%;
+    margin-inline: auto;
+}
+
+.picture-combo .premium-card .text {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-inline: auto;
+    margin-block: 2rem;
+    /* width: 150%; */
+}
+
+.picture-combo .premium-card .price {
+    margin-block: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    width: 50%;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.picture-combo .premium-card span {
+    font-size: 1.8rem;
+}
+
+.picture-combo .premium-card .price h1 {
+    font-size: 4.5rem;
+}
+
+.picture-combo .premium-card .btns {
+    width: 50%;
+    margin-inline: auto;
+}
+
+.picture-combo .premium-card .btns button {
+    width: 100%;
+    text-align: center;
+    margin-block: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.picture-combo .premium-card .btns .yellow {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.picture-combo .premium-card .btns .white {
+    background: white;
+    color: black;
+}
+
+.picture-combo .premium-card .btns .btn1:hover {
+    background: skyblue;
+}
+
+.picture-combo .premium-card .btns .btn2:hover {
+    background: yellow;
+}
+
+
+
+/* ---footer-- */
+.footer {
+    display: flex;
+    align-items: center;
+    margin: 15rem 8% 2rem;
+    justify-content: space-between;
+}
+
+
+.footer .left {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+}
+
+
+.footer .left p {
+    font-size: 1.6rem;
+}
+
+.footer .icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+
+/* ---media query-- */
+
+@media(max-width: 1440px) {
+
+    /* ---picture combo--- */
+
+
+    body {
+        background: url('assets/bg-main-tablet.png') no-repeat;
+    }
+
+
+    .header .title {
+        width: 60%;
+    }
+
+    .header p{
+        width: 50%;
+    }
+
+
+    .picture-combo .premium-card {
+        padding: 7rem 3rem 1rem;
+        width: 50rem;
+        height: 55rem;
+        margin-top: 20rem;
+    }
+
+    .picture-combo .imgs .phone{
+        width: 25rem;
+    }
+
+    .picture-combo .premium-card .text {
+        width: 100%;
+        margin-block: 3rem;
+    }
+
+    .picture-combo .premium-card .p-talk {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .picture-combo .premium-card .price {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        margin-block: 3rem;
+    }
+
+    .picture-combo .premium-card .btns {
+        width: 100%;
+    }
+
+    .picture-combo .imgs .phone {
+        width: 35rem;
+        position: absolute;
+        margin-top: -30rem;
+        margin-left: 5rem;
+    }
+
+    .footer .left {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer .left img {
+        margin-right: auto;
+    }
+
+}
+
+
+
+
+
+@media(max-width: 900px) {
+
+    body {
+        background: url('assets/bg-main-mobile.png') no-repeat;
+    }
+
+    .decoration {
+        display: none;
+    }
+
+    .header .title {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .header .title, .header p{
+        margin: 3rem;
+        width: 90%;
+    }
+
+    .logo{
+        margin-left: 3rem;
+    }
+
+
+    /* ---picture-combo--- */
+    .picture-combo {
+        margin: 30rem 0% 5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .picture-combo .imgs {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .picture-combo .imgs .phone {
+        width: 25rem;
+        margin-top: -20rem;
+        margin-inline: auto;
+    }
+    
+    .picture-combo .imgs .illus {
+        position: absolute;
+        width: 30rem;
+        margin-inline: auto;
+        z-index: -1;
+    }
+    
+    .picture-combo .premium-card {
+        padding:3rem;
+        background: #FA7453;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        right: 0%;
+        bottom: -18%;
+        color: white;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .picture-combo .premium-card .p-talk {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .picture-combo .premium-card .text {
+        width: 100%;
+        font-size: 1.8rem;
+        margin-block: 2rem;
+    }
+    
+    .picture-combo .premium-card .price {
+        width: 100%;
+    }
+    
+    
+    .picture-combo .premium-card .btns {
+        width: 100%;
+    }
+    
+    .picture-combo .premium-card .btns button {
+        font-weight: 600;
+    }
+    
+
+    /* ---footer--- */
+    .footer{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer  p{
+        width: 75%;
+        margin-right: auto;
+    }
+
+    .footer .left{
+        align-self: flex-start;
+    }
+
+    .footer .icons{
+       align-self: flex-start;
+    }
+
+
+}
